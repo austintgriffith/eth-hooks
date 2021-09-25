@@ -127,7 +127,8 @@
     "eslint linebreak-style": "off",
     "object-curly-newline": "off",
     "no-shadow": "off",
-    "no-void": ["error", { "allowAsStatement": true }]
+    "no-void": ["error", { "allowAsStatement": true }],
+    "mocha/no-mocha-arrows": "off"
   },
   "settings": {
     "react": {

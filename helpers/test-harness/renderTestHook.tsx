@@ -1,13 +1,8 @@
-import '@nomiclabs/hardhat-waffle';
-
 import { Renderer, renderHook, RenderHookResult } from '@testing-library/react-hooks';
 import { MockProvider } from 'ethereum-waffle';
-import { waffle } from 'hardhat';
 import { FC } from 'react';
 
-import { MockEthersWrapper } from '~helpers/MockWeb3Provider';
-
-export const mockProvider = waffle.provider;
+import { MockEthersWrapper } from '~helpers/test-harness/MockWeb3Provider';
 
 type TTestHookResult<TProps, TResult> = RenderHookResult<TProps, TResult, Renderer<TProps>> & {
   mockProvider: MockProvider;
@@ -20,12 +15,13 @@ type TTestHookResult<TProps, TResult> = RenderHookResult<TProps, TResult, Render
  * @returns (TTestHookResult)
  */
 export const renderTestHook = <TProps, TResult>(
+  provider: MockProvider,
   callback: (props: TProps) => TResult
 ): TTestHookResult<TProps, TResult> => {
-  const wrapper: FC = (props) => <MockEthersWrapper mockProvider={mockProvider}>{props.children}</MockEthersWrapper>;
+  const wrapper: FC = (props) => <MockEthersWrapper mockProvider={provider}>{props.children}</MockEthersWrapper>;
   const result = renderHook(callback, { wrapper: wrapper });
   return {
     ...result,
-    mockProvider,
+    mockProvider: provider,
   };
 };

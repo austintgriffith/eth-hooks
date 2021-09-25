@@ -16,10 +16,10 @@ const config: HardhatUserConfig = {
     },
   },
   mocha: {
-    asyncOnly: true,
+    // asyncOnly: true,
     bail: false,
     require: ['ts-node/register'],
-    timeout: 10000,
+    timeout: 20000,
     reporter: process.env.GITHUB_ACTIONS === 'true' ? 'mocha-junit-reporter' : 'spec',
     reporterOptions: {
       mochaFile: 'testresult.xml',
