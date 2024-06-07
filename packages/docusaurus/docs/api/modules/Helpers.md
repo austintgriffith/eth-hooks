@@ -45,7 +45,7 @@ ___
 ▸ **isEthersProvider**(`providerBase`): `boolean`
 
 #### Summary
-Is it a ethers compatable provider, used by EthersModalConnector and useEthersProvider
+Is it a ethers compatible provider, used by EthersModalConnector and useEthersProvider
 
 #### Parameters
 

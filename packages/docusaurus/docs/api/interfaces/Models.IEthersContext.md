@@ -9,7 +9,7 @@ custom_edit_url: null
 
 #### Summary
 The return type of [TCreateEthersModalConnector](../modules/Models.md#tcreateethersmodalconnector)
-- ethers compatable provider [TEthersProvider](../modules/Models.md#tethersprovider)
+- ethers compatible provider [TEthersProvider](../modules/Models.md#tethersprovider)
 - a callback to change the current signer
 - the current account, chainId and signer
 - callbacks to open the web3Modal, logout or change theme

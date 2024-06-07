@@ -211,7 +211,7 @@ Inherits from AbstractConnector.  This activates web3Modal and opens the modal.
 Once the user selects a provider
 - this will activate the provider and attach the appropriate event listeners.
 - get the account and signer
-- gets the ethers compatable provider
+- gets the ethers compatible provider
 
 ##### ⚠️ Errors
 - [UserClosedModalError](EthersAppContext.UserClosedModalError.md)

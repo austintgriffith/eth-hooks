@@ -35,7 +35,7 @@ This provider would be the one selected by using [EthersModalConnector](../class
 
 ##### ✨ Features
 Gives you access to consistent interface to get the current provider information [EthersModalConnector](../classes/EthersAppContext.EthersModalConnector.md)
-- ethers compatable provider TEthersProvider
+- ethers compatible provider TEthersProvider
 - a callback to change the current account (signer)
 - the current account, chainId and signer
 - callbacks to open the web3Modal, logout or change theme
@@ -69,7 +69,7 @@ This provider would be the one selected by using [EthersModalConnector](../class
 
 ##### ✨ Features
 Gives you access to consistent interface to get the current provider information [EthersModalConnector](../classes/EthersAppContext.EthersModalConnector.md)
-- ethers compatable provider TEthersProvider
+- ethers compatible provider TEthersProvider
 - a callback to change the current account (signer)
 - the current account, chainId and signer
 - callbacks to open the web3Modal, logout or change theme
@@ -202,7 +202,7 @@ Props for context
 | `secondaryWeb3ReactRoot.contextKey` | `string` | - |
 | `secondaryWeb3ReactRoot.web3ReactRoot` | `JSX.Element` | - |
 | `disableDefaultQueryClientRoot?` | `boolean` | disables the local queryClientRoot and QueryClientProvider for react-query and allows you to use your own |
-| `customGetEthersAppProviderLibrary?` | [`TGetEthersAppProviderLibrary`](EthersAppContext.md#tgetethersappproviderlibrary) | if you want to pass in your own provider. Make sure it is compatable with ethers.js, see [TGetEthersAppProviderLibrary](EthersAppContext.md#tgetethersappproviderlibrary) for details |
+| `customGetEthersAppProviderLibrary?` | [`TGetEthersAppProviderLibrary`](EthersAppContext.md#tgetethersappproviderlibrary) | if you want to pass in your own provider. Make sure it is compatible with ethers.js, see [TGetEthersAppProviderLibrary](EthersAppContext.md#tgetethersappproviderlibrary) for details |
 
 #### Defined in
 

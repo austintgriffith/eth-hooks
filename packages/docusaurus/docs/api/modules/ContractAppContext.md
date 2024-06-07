@@ -6,7 +6,7 @@ sidebar_position: 0
 custom_edit_url: null
 ---
 
-A context for your react app with [contractsContextFactory](ContractAppContext.md#contractscontextfactory) that provides you access to load, connect and use typed contracts throught your app.
+A context for your react app with [contractsContextFactory](ContractAppContext.md#contractscontextfactory) that provides you access to load, connect and use typed contracts through your app.
 
 See [the ContractAppContext docs](../../main/context/ContractAppContext) for detailed explanation and examples.
 
