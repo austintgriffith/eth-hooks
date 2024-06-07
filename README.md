@@ -1,5 +1,11 @@
 # Eth-ui Monorepo
 
+# Note: Archived
+Please use wagmi as a modern alternative!  Please see [scaffold-eth-2](https://github.com/scaffold-eth/scaffold-eth-2) for details on how to use it with scaffold eth
+
+
+----
+
 A monorep for eth ui related packages including [eth-hooks](packages/eth-hooks/README.md)
 
 ---
